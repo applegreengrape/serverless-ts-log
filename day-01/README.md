@@ -5,20 +5,20 @@
 
 - 🍺 install typescript
 ```
-npm install -g typescript
+$ npm install -g typescript
 ```
 
 - 🎬 init 
 ```
-npm init -y
-tsc --init
+$ npm init -y
+$ tsc --init
 ```
 
 - ✍🏻 create the typescipt file
 ```
-touch hey.ts
-```
-```
+$ touch hey.ts
+
+// hey.ts
 import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
 
 export const lambdaHandler = async (
@@ -33,7 +33,7 @@ export const lambdaHandler = async (
 
 - 🍺 install required packages
 ```
-npm install --save @types/aws-lambda
+$ npm install --save @types/aws-lambda
 ```
 
 - 🔧 tweak `tsconfig.json`
@@ -51,7 +51,7 @@ An async function or method in ES5/ES3 requires the 'Promise' constructor. Make 
 
 - ⚒️ compile it
 ```
-tsc
+$ tsc
 ```
 
 - 🥳 it's compiled 
@@ -65,4 +65,61 @@ tsc
 └── tsconfig.json
 ```
 
-## 🔍 unit test and integration test (part two)
+## 🔍 Unit test (part two)
+
+- 🍺 install the tool kits and configure it
+```
+$ npm install --save-dev jest
+$ npm install --save-dev @babel/core @babel/cli
+```
+```
+$ touch babel.config.js
+
+// babel.config.js
+module.exports = {
+    presets: [
+        ['@babel/preset-env', {targets: {node: 'current'}}],
+        '@babel/preset-typescript',
+    ],
+};
+```
+
+- 🧪 create unit test script
+```
+$ mkdir -p test/unit
+$ touch test/unit/test-handler.test.ts
+
+// test/unit/test-handler.test.ts
+import { APIGatewayProxyEvent } from "aws-lambda";
+import { lambdaHandler } from "../../hey";
+
+describe('Unit test for app handler', function () {
+    it('verifies successful response', async () => {
+        const event: APIGatewayProxyEvent = {
+        } as any
+        const result = await lambdaHandler(event)
+
+        expect(result.statusCode).toEqual(200);
+        expect(result.body).toEqual(`👋 hey`);
+    });
+});
+```
+
+- 🦾 test it
+
+$ unit test:
+```
+$ ./node_modules/.bin/jest init
+
+$ ./node_modules/.bin/jest init .
+ PASS  test/unit/test-handler.test.ts
+  Unit test for app handler
+    ✓ verifies successful response (2 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.537 s
+Ran all test suites matching /init|./i.
+
+```

@@ -1,7 +1,7 @@
 
 # 🕰️ Day 01 
 
-## 👋 hello world typescript lambda
+## 👋 hello world typescript lambda (part one)
 
 - 🍺 install typescript
 ```
@@ -65,4 +65,4 @@ tsc
 └── tsconfig.json
 ```
 
-## 🔍 Let's test it!
+## 🔍 unit test and integration test (part two)

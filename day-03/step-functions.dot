@@ -1,6 +1,6 @@
 graph {
-    start -- random_number_generator;
-    random_number_generator -- odd_or_even;
+    start -- length_of_the_quote;
+    length_of_the_quote -- odd_or_even;
     odd_or_even -- odd;
     odd_or_even -- even;
     odd -- send_result;

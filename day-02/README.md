@@ -146,5 +146,6 @@ Snapshots:   0 total
 Time:        1.594 s, estimated 2 s
 Ran all test suites.
 ```
-
-c
+<p align="center">
+  <img src="https://media.giphy.com/media/lr2bkSkxMWFCo/giphy.gif">
+</p>

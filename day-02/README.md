@@ -1,6 +1,6 @@
 # 🕰️ Day 02
 
-## 🚀 sam it up and add integration test
+## 🚀 sam it up and 🔗 add local integration test
 
 - recap 🕰️ Day 01
 ```

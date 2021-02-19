@@ -1,7 +1,7 @@
 
 # 🕰️ Day 01 
 
-## 👋 hello world typescript lambda (part one)
+## 👋 hello world typescript lambda
 
 - 🍺 install typescript
 ```
@@ -65,7 +65,7 @@ $ tsc
 └── tsconfig.json
 ```
 
-## 🔍 Unit test (part two)
+## 🔍 unit test
 
 - 🍺 install the tool kits and configure it
 ```

@@ -124,5 +124,5 @@ Ran all test suites matching /init|./i.
 
 ```
 <p align="center">
-  <img src="https://media.giphy.com/media/3o85xjSETVG3OpPyx2/giphy.gif">
+  <img src="https://media.giphy.com/media/j4FjeSKl2nn5R89cmi/giphy.gif">
 </p>

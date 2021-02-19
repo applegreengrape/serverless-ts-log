@@ -70,8 +70,8 @@ $ tsc
 - 🍺 install the tool kits and configure it
 ```
 $ npm install --save-dev jest
-$ npm install --save-dev @babel/core @babel/cli
-```
+$ npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-typescript
+``` 
 ```
 $ touch babel.config.js
 
@@ -123,3 +123,6 @@ Time:        1.537 s
 Ran all test suites matching /init|./i.
 
 ```
+<p align="center">
+  <img width="460" height="300" src="https://media.giphy.com/media/3o85xjSETVG3OpPyx2/giphy.gif">
+</p>

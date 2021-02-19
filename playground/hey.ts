@@ -1,7 +1,4 @@
-import { 
-    APIGatewayProxyEvent, 
-    APIGatewayProxyResult 
-} from "aws-lambda";
+import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
 
 export const lambdaHandler = async (
     event: APIGatewayProxyEvent
@@ -9,5 +6,5 @@ export const lambdaHandler = async (
     return {
         statusCode: 200,
         body: `👋 hey`
-    };
+    }
 }

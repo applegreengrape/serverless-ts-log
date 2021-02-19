@@ -1,6 +1,6 @@
 # 🕰️ Day 02
 
-## 🚀 sam it up and add integration test
+## 🚀 sam it up and 🔗 add local integration test
 
 - recap 🕰️ Day 01
 ```
@@ -146,5 +146,6 @@ Snapshots:   0 total
 Time:        1.594 s, estimated 2 s
 Ran all test suites.
 ```
-
-c
+<p align="center">
+  <img width=300 src="https://media.giphy.com/media/lr2bkSkxMWFCo/giphy.gif">
+</p>

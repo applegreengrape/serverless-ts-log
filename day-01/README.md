@@ -1,7 +1,7 @@
 
 # 🕰️ Day 01 
 
-## 👋 hello world typescript lambda (part one)
+## 👋 hello world typescript lambda
 
 - 🍺 install typescript
 ```
@@ -65,7 +65,7 @@ $ tsc
 └── tsconfig.json
 ```
 
-## 🔍 Unit test (part two)
+## 🔍 unit test
 
 - 🍺 install the tool kits and configure it
 ```
@@ -124,5 +124,5 @@ Ran all test suites matching /init|./i.
 
 ```
 <p align="center">
-  <img width="460" height="300" src="https://media.giphy.com/media/3o85xjSETVG3OpPyx2/giphy.gif">
+  <img width=300 src="https://media.giphy.com/media/j4FjeSKl2nn5R89cmi/giphy.gif">
 </p>

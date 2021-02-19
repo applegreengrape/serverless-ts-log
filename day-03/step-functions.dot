@@ -1,0 +1,7 @@
+graph {
+    start -- 👋function_a;
+    👋function_a -- 🤝function_b [label="works"];
+    👋function_a -- 🐛function_c [label="errors"];
+    🤝function_b -- end;
+    🐛function_c -- end;
+}

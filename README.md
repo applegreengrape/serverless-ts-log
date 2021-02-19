@@ -13,3 +13,6 @@ workdir: `./playground`
 [🕰️ Day 02](./day-02)
 - 🚀 sam it up 
 - 🔗 add local integration test
+
+[🕰️ Day 03](./day-03)
+- 🦾 I am a state machine 🦿

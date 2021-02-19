@@ -147,5 +147,5 @@ Time:        1.594 s, estimated 2 s
 Ran all test suites.
 ```
 <p align="center">
-  <img src="https://media.giphy.com/media/lr2bkSkxMWFCo/giphy.gif">
+  <img width=300 src="https://media.giphy.com/media/lr2bkSkxMWFCo/giphy.gif">
 </p>

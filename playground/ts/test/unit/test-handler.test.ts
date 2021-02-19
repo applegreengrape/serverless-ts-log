@@ -1,5 +1,5 @@
 import { APIGatewayProxyEvent } from "aws-lambda";
-import { lambdaHandler } from "../../hey";
+import { lambdaHandler } from "../../src/hey";
 
 describe('Unit test for app handler', function () {
     it('verifies successful response', async () => {
@@ -8,6 +8,6 @@ describe('Unit test for app handler', function () {
         const result = await lambdaHandler(event)
 
         expect(result.statusCode).toEqual(200);
-        expect(result.body).toEqual(`👋 hey`);
+        expect(result.body).toContain(`👋 hey`);
     });
 });

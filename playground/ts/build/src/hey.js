@@ -35,13 +35,18 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.lambdaHandler = void 0;
+require("popular-movie-quotes");
 var lambdaHandler = function (event) { return __awaiter(void 0, void 0, void 0, function () {
+    var movieQuote, quote;
     return __generator(this, function (_a) {
+        movieQuote = require("popular-movie-quotes");
+        console.log(movieQuote.getRandomQuote());
+        quote = movieQuote.getRandomQuote();
         return [2 /*return*/, {
                 statusCode: 200,
-                body: "\uD83D\uDC4B hey"
+                body: "\uD83D\uDC4B hey, " + quote
             }];
     });
 }); };

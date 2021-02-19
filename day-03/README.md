@@ -4,7 +4,7 @@
 
 ### Recap & Restructure
 
-make a `ts` folder to handle the typescript build and test. And it will be easier to add more typescript functions/lambdas
+make a `ts` folder to handle the typescript build and test. And it will be easier to add more typescript functions/lambdas later. 
 ```
 $ tree -I node_modules
 .

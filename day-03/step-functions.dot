@@ -1,7 +1,9 @@
 graph {
-    start -- 👋function_a;
-    👋function_a -- 🤝function_b [label="works"];
-    👋function_a -- 🐛function_c [label="errors"];
-    🤝function_b -- end;
-    🐛function_c -- end;
+    start -- random_number_generator;
+    random_number_generator -- odd_or_even;
+    odd_or_even -- odd;
+    odd_or_even -- even;
+    odd -- send_result;
+    even -- send_result;
+    send_result -- end;
 }

@@ -6,13 +6,16 @@ This is a learning project to get hands-on with typescripts + step functions + s
 
 workdir: `./playground`
 
-[🕰️ Day 01](./day-01) 
+[🕰️ Day 01](./day-01)
+Branch: `day-01`
 - 👋 hello world typescript lambda
 - 🔍 Unit test
 
 [🕰️ Day 02](./day-02)
+Branch: `day-02`
 - 🚀 sam it up 
 - 🔗 add local integration test
 
 [🕰️ Day 03](./day-03)
+Branch: `day-03`
 - 🦾 I am a state machine 🦿

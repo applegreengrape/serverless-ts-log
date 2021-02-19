@@ -7,4 +7,5 @@ Background readings:
 - [Tutorials for Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/tutorials.html)
 
 Très bien! Let's start with a super simple step functions:
+
 <img src="./sf.png">

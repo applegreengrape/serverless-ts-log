@@ -152,4 +152,5 @@ Ran all test suites.
 </p>
 
 [🕰️ Day 02](../day-03)
-[🏠 back to homepage](../.)
+
+[🏠 back to homepage](https://github.com/applegreengrape/serverless-ts-log)

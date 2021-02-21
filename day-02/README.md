@@ -150,3 +150,5 @@ Ran all test suites.
 <p align="center">
   <img width=300 src="https://media.giphy.com/media/lr2bkSkxMWFCo/giphy.gif">
 </p>
+
+[🏠 back to homepage](https://github.com/applegreengrape/serverless-ts-log)

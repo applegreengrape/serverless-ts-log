@@ -126,3 +126,5 @@ Ran all test suites matching /init|./i.
 <p align="center">
   <img width=300 src="https://media.giphy.com/media/j4FjeSKl2nn5R89cmi/giphy.gif">
 </p>
+
+[🏠 back to homepage](https://github.com/applegreengrape/serverless-ts-log)

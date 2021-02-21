@@ -28,5 +28,3 @@ Branch: `day-03`
 
 Branch: `day-04`
 - 🔀 asynchronous vs synchronous invocation 🔄
-
-<img src="day-03/sf-result.png">

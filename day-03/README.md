@@ -323,4 +323,4 @@ $ sam deploy
   <img width=300 src="https://media.giphy.com/media/100QWMdxQJzQC4/giphy.gif">
 </p>
 
-[🏠 back to homepage](https://github.com/applegreengrape/serverless-ts-log)
+[🏠 back to homepage](../.)

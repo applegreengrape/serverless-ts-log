@@ -2,6 +2,8 @@
 
 ## 🦾 I am a state machine 🦿
 
+workdir: [`playground`](https://github.com/applegreengrape/serverless-ts-log/tree/day-03/playground)
+
 ### 🔧 Recap & Restructure
 
 make a `ts` folder to handle the typescript build and test. And it will be easier to add more typescript functions/lambdas later. 

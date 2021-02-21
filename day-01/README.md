@@ -3,6 +3,8 @@
 
 ## 👋 hello world typescript lambda
 
+workdir: [`playground`](https://github.com/applegreengrape/serverless-ts-log/tree/day-01/playground)
+
 - 🍺 install typescript
 ```
 $ npm install -g typescript
@@ -127,6 +129,6 @@ Ran all test suites matching /init|./i.
   <img width=300 src="https://media.giphy.com/media/j4FjeSKl2nn5R89cmi/giphy.gif">
 </p>
 
-[🕰️ Day 02](../day-02)
+[🕰️ Day 02](https://github.com/applegreengrape/serverless-ts-log/tree/day-02/day-02)
 
 [🏠 back to homepage](https://github.com/applegreengrape/serverless-ts-log)

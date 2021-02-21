@@ -2,6 +2,8 @@
 
 ## 🚀 sam it up and 🔗 add local integration test
 
+workdir: [`playground`](https://github.com/applegreengrape/serverless-ts-log/tree/day-02/playground)
+
 - recap 🕰️ Day 01
 ```
 $ tree playground/ -I node_modules
@@ -151,6 +153,6 @@ Ran all test suites.
   <img width=300 src="https://media.giphy.com/media/lr2bkSkxMWFCo/giphy.gif">
 </p>
 
-[🕰️ Day 03](../day-03)
+[🕰️ Day 03](https://github.com/applegreengrape/serverless-ts-log/tree/day-03/day-03)
 
 [🏠 back to homepage](https://github.com/applegreengrape/serverless-ts-log)

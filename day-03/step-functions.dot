@@ -1,9 +1,0 @@
-graph {
-    start -- hey ;
-    hey -- odd_or_even [label="choice"];
-    odd_or_even -- odd [label="$.odd=yes"];
-    odd_or_even -- even [label="$.odd=no"];
-    odd -- send_result;
-    even -- send_result;
-    send_result -- end;
-}

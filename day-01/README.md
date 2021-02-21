@@ -107,11 +107,18 @@ describe('Unit test for app handler', function () {
 
 - 🦾 test it
 
-$ unit test:
+- 🔧 tweak `package.json`
 ```
-$ ./node_modules/.bin/jest init
+"scripts": {
+    "test": "jest --env=node"
+  },
+```
+```
+$ npm run test -- test-handler.test.ts
 
-$ ./node_modules/.bin/jest init .
+> playground@1.0.0 test ~/Documents/TS_test/serverless-ts-log/playground
+> jest --env=node "test-handler.test.ts"
+
  PASS  test/unit/test-handler.test.ts
   Unit test for app handler
     ✓ verifies successful response (2 ms)
@@ -119,9 +126,8 @@ $ ./node_modules/.bin/jest init .
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        1.537 s
-Ran all test suites matching /init|./i.
-
+Time:        0.717 s, estimated 1 s
+Ran all test suites matching /test-handler.test.ts/i.
 ```
 <p align="center">
   <img width=300 src="https://media.giphy.com/media/j4FjeSKl2nn5R89cmi/giphy.gif">

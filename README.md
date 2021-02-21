@@ -7,7 +7,7 @@ This is a step-by-step learning project to get hands-on with typescripts + step 
 
 workdir: `./playground`
 
-[🕰️ Day 01](./day-01)
+[🕰️ Day 01](https://github.com/applegreengrape/serverless-ts-log/tree/day-01/day-01)
 
 Branch: `day-01`
 - 👋 hello world typescript lambda

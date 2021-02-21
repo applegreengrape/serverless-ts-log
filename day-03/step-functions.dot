@@ -1,8 +1,8 @@
 graph {
-    start -- length_of_the_quote;
-    length_of_the_quote -- odd_or_even;
-    odd_or_even -- odd;
-    odd_or_even -- even;
+    start -- hey ;
+    hey -- odd_or_even [label="choice"];
+    odd_or_even -- odd [label="$.odd=yes"];
+    odd_or_even -- even [label="$.odd=no"];
     odd -- send_result;
     even -- send_result;
     send_result -- end;

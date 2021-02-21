@@ -6,8 +6,6 @@ describe('Unit test for app handler', function () {
         const event: APIGatewayProxyEvent = {
         } as any
         const result = await lambdaHandler(event)
-
-        expect(result.statusCode).toEqual(200);
-        expect(result.body).toContain(`👋 hey`);
+        expect(result.quote).toContain(`👋 hey`);
     });
 });

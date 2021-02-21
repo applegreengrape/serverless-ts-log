@@ -22,3 +22,8 @@ Branch: `day-02`
 
 Branch: `day-03`
 - 🦾 I am a state machine 🦿
+
+[🕰️ Day 04](./day-04)
+
+Branch: `day-04`
+- 🔀 asynchronous vs synchronous invocation 🔄

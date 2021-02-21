@@ -1,11 +1,4 @@
 "use strict";
-/*
-import {
-    APIGatewayProxyEvent,
-    APIGatewayProxyResult
-} from "aws-lambda";
---> it is no longer lambda proxy integration, it is custom lambda integration
-*/
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -44,26 +37,13 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.lambdaHandler = void 0;
-require("popular-movie-quotes");
-var lambdaHandler = function () { return __awaiter(void 0, void 0, void 0, function () {
-    var movieQuote, quote;
+var lambdaHandler = function (event, context) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
-        movieQuote = require("popular-movie-quotes");
-        console.log(movieQuote.getRandomQuote());
-        quote = movieQuote.getRandomQuote();
-        if (quote.length % 2 == 0) {
-            return [2 /*return*/, {
-                    quote: "\uD83D\uDC4B hey, " + quote,
-                    odd: false,
-                }];
-        }
-        else {
-            return [2 /*return*/, {
-                    quote: "\uD83D\uDC4B hey, " + quote,
-                    odd: true,
-                }];
-        }
-        return [2 /*return*/];
+        return [2 /*return*/, {
+                quote: event["quote"],
+                odd: event["odd"],
+                msg: "yep, you hit the even function"
+            }];
     });
 }); };
 exports.lambdaHandler = lambdaHandler;

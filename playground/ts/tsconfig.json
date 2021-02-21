@@ -68,6 +68,8 @@
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
   },
   "files": [
-    "./src/hey.ts"
+    "./src/hey.ts",
+    "./src/odd.ts",
+    "./src/even.ts"
   ]
 }

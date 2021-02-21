@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  👋 hey
+  hello-world step functions
   
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
@@ -9,26 +9,64 @@ Globals:
     Timeout: 3
 
 Resources:
-  HelloWorldFunction:
-    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+  HeyApi:
+    Type: AWS::Serverless::Api
     Properties:
-      CodeUri: ts/build/src
+        StageName: dev
+
+  Hey:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ts/build/src/
       Handler: hey.lambdaHandler
       Runtime: nodejs14.x
+      MemorySize: 128
+      Policies:
+        - AWSLambdaBasicExecutionRole
+  
+  Odd:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ts/build/src/
+      Handler: odd.lambdaHandler
+      Runtime: nodejs14.x
+      MemorySize: 128
+      Timeout: 3
+      Policies:
+        - AWSLambdaBasicExecutionRole
+  
+  Even:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ts/build/src/
+      Handler: even.lambdaHandler
+      Runtime: nodejs14.x
+      MemorySize: 128
+      Timeout: 3
+      Policies:
+        - AWSLambdaBasicExecutionRole
+
+  HeyFlowStateMachine:
+    Type: AWS::Serverless::StateMachine # More info about State Machine Resource: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-statemachine.html
+    Properties:
+      DefinitionUri: statemachine/transaction_flow.asl.json
+      DefinitionSubstitutions:
+        HeyFunctionArn: !GetAtt Hey.Arn
+        OddFunctionArn: !GetAtt Odd.Arn
+        EvenFunctionArn: !GetAtt Even.Arn
       Events:
-        HelloWorld:
-          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+        ApiEvent:
+          Type: Api # More info about Schedule Event Source: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-property-statemachine-schedule.html
           Properties:
             Path: /poke
             Method: get
-
-Outputs:
-  HelloWorldApi:
-    Description: "API Gateway endpoint URL for Prod stage for Hello World function"
-    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/poke/"
-  HelloWorldFunction:
-    Description: "Hello World Lambda Function ARN"
-    Value: !GetAtt HelloWorldFunction.Arn
-  HelloWorldFunctionIamRole:
-    Description: "Implicit IAM Role created for Hello World function"
-    Value: !GetAtt HelloWorldFunctionRole.Arn
+            RestApiId:
+                Ref: HeyApi
+      Policies: # Find out more about SAM policy templates: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-policy-templates.html
+        - LambdaInvokePolicy:
+            FunctionName: !Ref Hey
+        - LambdaInvokePolicy:
+            FunctionName: !Ref Odd
+        - LambdaInvokePolicy:
+            FunctionName: !Ref Even
+  
